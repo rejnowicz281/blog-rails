@@ -6,20 +6,19 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag "reset", "application", "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
   </head>
 
   <body>
-    <div class="container">
-      <header>
-        <h1>The Blog</h1>
-        <p>Blog article count: <%= Article.public_count %></p>
-        <a href="/">Homepage</a>
-      </header>
-      <main>
-        <%= yield %>
-      </main>
-    </div>
+    <header>
+      <h1>The Blog</h1>
+      <em>Number of Articles: <%= Article.public_count %></em>
+      <a class="homepage-link" href="/">Homepage</a>
+    </header>
+
+    <main>
+      <%= yield %>
+    </main>
   </body>
 </html>

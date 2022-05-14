@@ -1,7 +1,6 @@
 <h2><%= link_to "Add New Article", new_article_path %></h2>
-<hr>
-<h3>Articles</h3>
 
+<h3>Articles</h3>
 <div class="articles-container">
     <% @articles.each do |article| %>
         <% unless article.archived? %>
