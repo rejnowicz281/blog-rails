@@ -55,7 +55,7 @@ main{
     align-items: center;
 }
 
-.articles-container{
+#articles-container{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -63,7 +63,7 @@ main{
     gap: 50px;
 }
 
-.articles-container a{
+#articles-container a{
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -80,7 +80,7 @@ main{
     text-decoration: none;
 }
 
-.articles-container a:hover{
+#articles-container a:hover{
     box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.20);
 }
 
